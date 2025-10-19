@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday</title>
     <style>
+        /* Khi thiết bị ở chế độ dọc */
+@media screen and (orientation: portrait) {
+  body::before {
+    content: "📱 Hãy xoay ngang điện thoại để xem thiệp dễ hơn 💌";
+    position: fixed;
+    inset: 0;
+    background: #FFC6C6;
+    color: #000;
+    font-size: 22px;
+    font-family: "Shantell Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    z-index: 9999;
+  }
+}
+
         *,
         *::before,
         *::after {
@@ -336,6 +355,7 @@ Mình không biết nói sao cho khéo, chỉ mong hôm nay và cả sau này, b
         </script>
 </body>
 </html>
+
 
 
 
